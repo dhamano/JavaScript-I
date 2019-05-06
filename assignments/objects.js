@@ -77,7 +77,7 @@ console.log(interns.antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-interns.kennan.speak = function() { console.log("Hello, my name is " + this.name + "!") }
+interns.kennan.speak = function() { console.log(`Hello, my name is ${this.name}!`) }
 interns.kennan.speak()
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
@@ -98,15 +98,15 @@ console.log(interns.antonietta.multiplyNums(3,4));
 const parent = {
   name: 'Susan',
   age: 70,
-  speak() { console.log('My name is '+this.name+'.') },
+  speak() { console.log(`My name is ${this.name}.`) },
   child : {
     name: 'George',
     age: 50,
-    speak() { console.log('My name is '+this.name+'.') },
+    speak() { console.log(`My name is ${this.name}.`) },
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: function() { console.log('My name is '+this.name+'.') }
+      speak: function() { console.log(`My name is ${this.name}.`) }
     }
   }
 }
